@@ -1,0 +1,92 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Add an Item</h4>
+  </div>
+
+  <div class="panel-body">
+
+    <form #newItemForm="ngForm" (ngSubmit)="onItemSubmit(newItemForm.value)">
+      <div class="form-group col-sm-4">
+        <label for="item" class="">Item</label>
+        <input
+          type="text"
+          class="form-control"
+          id="item"
+          placeholder="Item"
+          name="item"
+          ngModel
+          required>
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="price" class="">Price</label>
+        <input
+          type="text"
+          class="form-control"
+          id="price"
+          placeholder="Price"
+          name="price"
+          ngModel
+          required>
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="item-type" class="">Item Type</label>
+        <select
+          name="type"
+          id="item-type"
+          class="form-control"
+          ngModel
+          required>
+          <option
+            *ngFor="let type of itemType"
+            [value]="type">
+            {{ utilService.capitalize(type) }}
+          </option>
+        </select>
+      </div>
+      <div class="form-group col-sm-6">
+        <label for="description" class="">Description</label>
+        <textarea
+          type="text"
+          class="form-control"
+          id="description"
+          placeholder="Description"
+          name="description"
+          ngModel
+          required>
+        </textarea>
+      </div>
+
+      <div class="form-group col-sm-2">
+        <label for="serves" class="">Serves</label>
+        <input
+          type="text"
+          class="form-control"
+          id="serves"
+          placeholder="serves"
+          name="serves"
+          ngModel
+          required>
+      </div>
+      <div class="form-group col-sm-2">
+        <label for="cal" class="">Calorie count</label>
+        <input
+          type="text"
+          class="form-control"
+          id="cal"
+          placeholder="Calorie.."
+          name="cal"
+          ngModel
+          required>
+      </div>
+      <div class="form-group col-sm-12">
+        <button
+          class="btn btn-primary listing-button"
+          type="submit"
+          ng-show="addListing">
+          Add
+        </button>
+      </div>
+    </form>
+
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="thumbnail">
+  <img src="assets/images/{{item.image}}.jpeg" alt="Image not found">
+  <div class="caption">
+    <div *ngIf="!item.showDetails">
+      <h4>
+        <span class="label label-primary">
+          {{ item.item }}
+        </span>
+      </h4>
+      <h3>
+        <i class="glyphicon glyphicon-tag"></i>
+        {{ item.price | currency:'USD':true }}
+      </h3>
+
+      <hr>
+
+      <button
+        class="btn btn-sm btn-success"
+        *ngIf="!item.showDetails"
+        (click)="item.showDetails = !item.showDetails">
+        Details
+      </button>
+
+    </div>
+
+    <div *ngIf="item.showDetails">
+      <div class="details">
+        <h4>
+          <span class="label label-primary">
+           Cal: {{item.cal}}
+          </span>
+          <span class="label label-primary">
+            Serves: {{ item.serves}}
+          </span>
+          <span class="label label-primary">
+            Type: {{ item.type}}
+          </span>
+        </h4>
+
+       <p>{{item.description}}</p>
+
+        <hr>
+
+        <button
+          class="btn btn-sm btn-danger"
+          (click)="item.showDetails = !item.showDetails">
+          Close
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>

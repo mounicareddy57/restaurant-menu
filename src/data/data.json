@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "type": "Appetizers",
+    "item": "Kale-Artichoke Dip",
+    "price": 19.99,
+    "description": "Thaw, frozen kale and frozen artichoke hearts",
+    "cal": 350,
+    "serves": 2,
+    "image":"img-1"
+  },
+  {
+    "id": 2,
+    "type": "Main course",
+    "item": "Bourbon Street Chicken + Shrimp",
+    "price": 16.99,
+    "description": "Cajun-seasoned chicken breast grilled and served on a sizzling skillet with blackened seasoned shrimp, garlic and thyme.",
+    "cal": 350,
+    "serves": 2,
+    "image":"img-2"
+  },
+  {
+    "id": 3,
+    "type": "Dessert",
+    "item": "Blue Ribbon Brownie",
+    "price": 5.99,
+    "description": "Super moist with chunks of dark chocolate, nuts and hot fudge. Big enough to share, served with two scoops of vanilla ice cream.",
+    "cal": 1650,
+    "serves": 1,
+    "image":"img-3"
+  },
+  {
+    "id": 4,
+    "type": "Main course",
+    "item": "Cedar Grilled Lemon Chicken",
+    "price": 13.99,
+    "description": "Cedar-seasoned grilled chicken, Granny Smith apple relish, rice, cranberries, honey-glazed pecans and quinoa.",
+    "cal": 550,
+    "serves": 1,
+    "image":"img-4"
+  },
+  {
+    "id": 5,
+    "type": "Appetizers",
+    "item": "Chicken Quesadilla",
+    "price": 9.99,
+    "description": "Chipotle-lime chicken, salsa verde and pico",
+    "cal": 450,
+    "serves": 1,
+    "image":"img-5"
+  },
+  {
+    "id": 6,
+    "type": "Main course",
+    "item": "Fiesta Lime Chicken",
+    "price": 12.99,
+    "description": "Grilled chicken breast, tortilla strips, cilantro-limeglaze and Mexi-ranch dressing topped with melted Cheddar cheese. Served with Spanish rice and pico.",
+    "cal": 650,
+    "serves": 2,
+    "image":"img-6"
+  }
+]
